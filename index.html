@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curiosidade sobre Tecnologia</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0fe;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        .mensagem {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        .botao {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Curiosidade sobre Tecnologia</h1>
+
+    <p class="mensagem">
+        Clique no botão para descobrir uma curiosidade!
+    </p>
+
+    <button class="botao">Mostrar curiosidade</button>
+
+    <script>
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        function mostrarMensagem() {
+            mensagem.textContent = "💻 Curiosidade: JavaScript é uma das linguagens mais utilizadas para criar páginas web interativas!";
+        }
+
+        botao.addEventListener("click", mostrarMensagem);
+    </script>
+
+</body>
+</html>
